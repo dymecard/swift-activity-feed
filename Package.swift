@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -22,7 +22,26 @@ let package = Package(
     targets: [
         .target(
             name: "GetStreamActivityFeed",
-            dependencies: ["Nuke", "Reusable", "SnapKit", .product(name: "GetStream", package: "stream-swift")],
-            path: "Sources/"),
+            dependencies: [
+                "Nuke",
+                "Reusable",
+                "SnapKit",
+                .product(name: "GetStream", package: "stream-swift")
+            ],
+            path: "Sources/",
+            resources: [
+                .copy("Icons.xcassets"),
+                .copy("Components/Open Graph/OpenGraphTableViewCell.xib"),
+                .copy("Views/Collection View Cells/AddingImageCollectionViewCell.xib"),
+                .copy("Views/Table View Cells/ActionUsersTableViewCell.xib"),
+                .copy("Views/Table View Cells/CommentTableViewCell.xib"),
+                .copy("Views/Table View Cells/NotificationTableViewCell.xib"),
+                .copy("Views/Table View Cells/PaginationTableViewCell.xib"),
+                .copy("Views/Table View Cells/PostActionsTableViewCell.xib"),
+                .copy("Views/Table View Cells/PostAttachmentImagesTableViewCell.xib"),
+                .copy("Views/Table View Cells/PostHeaderTableViewCell.xib"),
+                .copy("Views/Table View Cells/SeparatorTableViewCell.xib"),
+            ]
+        ),
     ]
 )

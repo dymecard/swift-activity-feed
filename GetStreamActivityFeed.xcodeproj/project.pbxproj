@@ -112,6 +112,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2229F8FD28324FEB00A17AE7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		60A554AB5CB724535E1CB46B /* Pods_GetStreamActivityFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetStreamActivityFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8078A996246C73140072C3C3 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
 		8A0525B221FBA7A90029E385 /* Range+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Range+Extensions.swift"; sourceTree = "<group>"; };
@@ -282,6 +283,7 @@
 				8A2D83FC2226C6CA00795FAE /* GetStreamActivityFeed.podspec */,
 				8A13FCFB21ECBD1100D216C6 /* README.md */,
 				8A13FCFA21ECBD1100D216C6 /* LICENSE */,
+				2229F8FD28324FEB00A17AE7 /* Package.swift */,
 			);
 			sourceTree = "<group>";
 		};
