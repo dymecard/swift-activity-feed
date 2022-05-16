@@ -9,7 +9,7 @@
 import Foundation
 import GetStream
 
-protocol EditPostViewable: class {
+protocol EditPostViewable: AnyObject {
     func underlineLinks(with dataDetectorURLItems: [DataDetectorURLItem])
     func updateOpenGraphData()
 }

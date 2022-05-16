@@ -12,7 +12,9 @@ import Nuke
 extension URL {
     func imageRequest(in view: UIView) -> ImageRequest {
         let size = CGSize(width: view.bounds.width, height: view.bounds.width)
-        let processors = [ImageProcessor.Resize(size: size, unit: .points, contentMode: .aspectFill, crop: true, upscale: false)]
+        let processors: [ImageProcessing] = [
+            .resize(size: size, unit: .points, contentMode: .aspectFill, crop: true, upscale: false)
+        ]
         return ImageRequest(url: self, processors: processors)
     }
 }
